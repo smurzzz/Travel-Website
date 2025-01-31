@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primarycolor: "#0376c1",
+                primarycolordark:" #002954",
+                textdark:" #12110f",
+                textlight: "#6b7280",
+                extralight:" #fbf7f6",
+                white: "#ffffff",
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+   <div class="container relative">
+    <header class="fixed drop-shadow-xl top-0 left-0 w-full z-10 h-[80px]">
+        <nav class="w-full flex common-padding bg-white h-full items-center transition justify-between">
+            <p class="font-bold text-2xl text-primarycolor">Atlas<span class="text-primarycolordark"> Odyssey</span></p>
+            <div class="flex gap-5 items-center justify-center font-[600] ">
+                <a class="text-textdark cursor-pointer duration-1000 hover:text-primarycolor active:scale-95 transition-all">Home</a>
+                <a class="text-textdark cursor-pointer duration-1000 hover:text-primarycolor active:scale-95 transition-all">Services</a>
+                <a href="#destinations" class="text-textdark cursor-pointer duration-1000 hover:text-primarycolor active:scale-95 transition-all">Destinations</a>
+                <a class="text-textdark cursor-pointer duration-1000 hover:text-primarycolor active:scale-95 transition-all">Packages</a>
+                <a class="text-textdark cursor-pointer duration-1000 hover:text-primarycolor active:scale-95 transition-all">Clients</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[600px] hero-container text-center relative flex items-center justify-center">
+        <p class="uppercase transparent-text text-8xl text-white font-bold">Traveller for life</p>
+        <div class="mt-5 absolute w-[1000px] bottom-[150px]">
+            <input type="text" placeholder="search place...."  class="w-full placeholder:text-black placeholder:font-semibold placeholder:capitalize transparent-text rounded-full border-none outline-none text-center h-[60px]">
+        </div>
+    </section>
+
+    <section class="mt-[100px] w-full gap-5 flex items-center justify-center">
+        <div class="flex gap-5 items-center h-[200px] w-[400px] p-5 bg-white drop-shadow-2xl">
+            <img src="./images/feature-1.png" alt="" class="w-[100px]">
+            <div>
+                <p class="font-semibold mb-2">Best Destinations</p>
+                <p>Discover the most breathtaking places around the globe.</p>
+            </div>
+        </div>
+        <div class="flex gap-5 items-center h-[200px] w-[400px] p-5 bg-white drop-shadow-2xl">
+            <img src="./images/feature-2.png" alt="" class="w-[100px]">
+            <div>
+                <p class="font-semibold mb-2">Best Price Guaranteed</p>
+                <p>Enjoy unbeatable prices on every trip you book.</p>
+            </div>
+        </div>
+        <div class="flex gap-5 items-center h-[200px] w-[400px] p-5 bg-white drop-shadow-2xl">
+            <img src="./images/feature-3.png" alt="" class="w-[100px]">
+            <div>
+                <p class="font-semibold mb-2">Instant Booking</p>
+                <p>Secure your dream vacation with just a click.</p>
+            </div>
+        </div>
+    </section>
+    <section class="mt-[100px] transition flex flex-col items-center justify-center                         " id="destinations">
+        <div class="text-center">
+            <p class="font-semibold text-3xl">Top Destinations</p>
+            <p>Find out what are the best destinations in the world</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-5 mt-10">
+            <div class="">
+                <img src="./images/destination-1.jpg" alt="" class="drop-shadow-2xl rounded-md">
+            </div>
+            <div>
+                <img src="./images/destination-2.jpg" alt="" class="drop-shadow-2xl rounded-md">
+            </div>
+            <div>
+                <img src="./images/destination-3.jpg" alt="" class="drop-shadow-2xl rounded-md">
+            </div>
+        </div>
+    </section>
+    <section class="mt-[100px] discount-background flex flex-col items-center justify-center w-full h-[300px]">
+        <p class="text-4xl max-w-[450px] text-center text-white">Get upto 60% discount
+            by joining us before summer</p>
+        <button class="mt-5 py-3 px-5 bg-yellow-500">Join us</button>
+    </section>
+
+    <section class="mt-[100px] flex-col flex items-center justify-center">
+        <div class="w-full flex-col text-center items-center justify-center">
+            <p class="font-bold text-3xl">Featured Packages</p>
+            <p>We will help you find the trip that's perfect for you!</p>
+        </div>
+        <div class="grid grid-cols-3 gap-5 mt-10">
+            <div class="bg-white drop-shadow-2xl">
+                <img src="./images/package-1.jpg" alt="" class="drop-shadow-2xl rounded-md">
+                <div class="mt-5 px-5 py-3">
+                    <div class="w-full items-center text-center justify-center flex flex-col" >
+                    <p class="font-semibold text-xl">Singapore City Tour</p>
+                    <p class="mt-3">Experience the vibrant blend of culture, cuisine, and cutting-edge architecture.</p>
+                </div>
+                    <div class="w-full items-center mt-5 flex justify-between">
+                        <button class="bg-primarycolor py-3 px-5 text-white">Book Now</button>
+                        <p class="text-primarycolor font-semibold">$150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white drop-shadow-2xl">
+                <img src="./images/package-2.jpg" alt="" class="drop-shadow-2xl rounded-md">
+                <div class="mt-5 px-5">
+                    <div class="w-full items-center text-center justify-center flex flex-col" >
+                    <p class="font-semibold text-xl">Singapore City Tour</p>
+                    <p class="mt-3">Experience the vibrant blend of culture, cuisine, and cutting-edge architecture.</p>
+                </div>
+                    <div class="w-full items-center mt-5 flex justify-between">
+                        <button class="bg-primarycolor py-3 px-5 text-white">Book Now</button>
+                        <p class="text-primarycolor font-semibold">$150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white drop-shadow-2xl">
+                <img src="./images/package-3.jpg" alt="" class="drop-shadow-2xl rounded-md">
+                <div class="mt-5 px-5">
+                    <div class="w-full items-center text-center justify-center flex flex-col" >
+                    <p class="font-semibold text-xl">Singapore City Tour</p>
+                    <p class="mt-3">Experience the vibrant blend of culture, cuisine, and cutting-edge architecture.</p>
+                </div>
+                    <div class="w-full items-center mt-5 flex justify-between">
+                        <button class="bg-primarycolor py-3 px-5 text-white">Book Now</button>
+                        <p class="text-primarycolor font-semibold">$150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-[100px]">
+        <div>
+            <p>Clients Reviews</p>
+        <p>We have many happy customers who booked holidays with us</p>
+        </div>
+        <div class="w-full grid grid-cols-3 gap-5 mt-5">
+            <div class="w-full flex-col flex items-center justify-center my-5 drop-shadow-2xl bg-white">
+                <div class="">
+                    <img src="./images/client-1.jpg" alt="" class="rounded-full w-[100px]">
+                </div>
+                <p>The instant booking feature is a game-changer. I secured my
+                    dream vacation to Bali in minutes!</p>
+                <p>>Michael Lee</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="w-full flex-col flex items-center justify-center my-5 drop-shadow-2xl bg-white">
+                <div class="">
+                    <img src="./images/client-2.jpg" alt="" class="rounded-full w-[100px]">
+                </div>
+                <p>
+                    TravelDream made my vacation planning effortless and enjoyable.
+                    Their best price guarantee really delivered!
+                </p>
+                <p>Sarah Johnson</p>
+                <p>Marketing Manager</p>
+            </div>
+            <div class="w-full flex-col flex items-center justify-center my-5 drop-shadow-2xl bg-white">
+                <div class="">
+                    <img src="./images/client-3.jpg" alt="" class="rounded-full w-[100px]">
+                </div>
+                <p>
+                TravelDream offers an unbeatable combination of great prices and
+                    top customer service. Highly recommended!
+                  !</p>
+                <p>David Martinez</p>
+                <p>Financial Analyst</p>
+            </div>
+            
+            
+        </div>
+    </section>
+   </div>
+</body>
+</html>
